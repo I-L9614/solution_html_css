@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesApp</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">NotesApp</h1>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+        
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <h2 class="sidebar-title">My Notes</h2>
+            <button class="new-note">+ New Note</button>
+
+            <div class="note-item active">
+                <h3>Shopping List</h3>
+                <p>Today at 10:30 AM</p>
+            </div>
+            <div class="note-item">
+                <h3>Meeting Notes</h3>
+                <p>Yesterday</p>
+            </div>
+            <div class="note-item">
+                <h3>Ideas</h3>
+                <p>Jan 15, 2026</p>
+            </div>
+            <div class="note-item">
+                <h3>Todo List</h3>
+                <p>Jan 14, 2026</p>
+            </div>
+        </aside>
+
+        <main>
+            <header>
+                <h1>Shopping List</h1>
+                <div class="actions">
+                    <button class="save">Save</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </header>
+
+            <div class="toolbar">
+                <div class="toolbar-item">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option>Personal</option>
+                        <option>Work</option>
+                        <option>Ideas</option>
+                        <option>Todo</option>
+                    </select>
+                </div>
+                <div class="toolbar-item">
+                    <label for="tags">Tags:</label>
+                    <input type="text" id="tags" placeholder="Add tags...">
+                </div>
+            </div>
+
+            <textarea placeholder="Start typing...">- Coffee&#10;- Fruits&#10;- ...</textarea>
+
+            <div class="status">
+                <span>Last edited: Today at 10:30 AM</span>
+                <span>Words: 5</span>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2026 NotesApp. Built with HTML & CSS</p>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
